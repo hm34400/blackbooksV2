@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('./css/bootstrap.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('./css/style.css') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        <script type="text/javascript" src="{{ asset('./script/jquery.min.js') }}"/></script>
+        <script type="text/javascript" src="{{ asset('./script/init.js') }}"/></script>
+        <script type="text/javascript" src="{{ asset('./script/app.js') }}"/></script>
+        <script type="text/javascript" src="{{ asset('./script/consulting_request.js') }}"/></script>
+        <script type="text/javascript" src="{{ asset('./script/rendering.js') }}"/></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
